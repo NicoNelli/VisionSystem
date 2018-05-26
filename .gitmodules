@@ -2,3 +2,14 @@
 	path = Firmware
 	url = https://github.com/NicoNelli/Firmware.git
 	branch = stable
+[submodule "landingPlat"]
+	path = landingPlat
+	url = https://github.com/NicoNelli/landingPlat.git
+[submodule "mocap2mav"]
+	path = mocap2mav
+	url = https://github.com/NicoNelli/mocap2mav.git
+	branch = VisionSystem
+[submodule "tb3_aprilTag"]
+	path = tb3_aprilTag
+	url = https://github.com/NicoNelli/tb3_aprilTag.git
+	branch = VisionSystem

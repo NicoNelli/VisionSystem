@@ -1,0 +1,4 @@
+[submodule "Firmware"]
+	path = Firmware
+	url = https://github.com/NicoNelli/Firmware.git
+	branch = stable

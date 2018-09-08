@@ -27,18 +27,33 @@ Then:
 	It's a ROS workspace in which there are the vision system and the bridge for communicating
 	with the guidance controller and a package to set the simulation.
 
-## How to compile:
+## How to run:
 
 Remember to export the variable M2M_INCLUDE to link the lcm_bridge and the guidance controller.
 
 ### To compile Firmware module:
 ```
-cd/Firmware
+cd ~/Firmware
 make posix_sitl_default
 no_sim=1 make posix_sitl_default gazebo
 ```
 
+The last instruction will wait to connect to the simulator
 
+### To set the vision system:
+```
+cd ~/tb3_aprilTag
+source environment.sh
 
+### To run the simulation with the vision system:
+```
+cd ~/tb3_aprilTag/catkin_ws/src/load_simulation
+source setup_variable.sh
+```
+It links Gazebo with Firmware, the bridge with Guidance controller, it includes the plugin for the platform, hence:
+```
+roslaunch load_simulation load_simulation.launch
+```
+It runs MAVROS package and aprilTag vision system.
 
 

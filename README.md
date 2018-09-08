@@ -58,12 +58,6 @@ source setup_variable.sh
 ```
 It links Gazebo with Firmware, the bridge with Guidance controller, it includes the plugin for the platform. Remember to set the correct paths
 
-### To run the bridge:
-```
-rosrun lcm_bridge lcm_bridge_node
-```
-In the catkin workspace
-
 ### To compile the guidance controller:
 ```
 cd ~/mocap2mav
@@ -107,7 +101,8 @@ Coming back to the first terminal and write:
 commander mode arm
 commander mode offboard
 ```
-To run the autonomous action. 
+To allow the mocap2mav module to communicate with the firmware.
+ 
 Besides rostopic to see the vision data.
 
 

@@ -44,6 +44,7 @@ The last instruction will wait to connect to the simulator
 ```
 cd ~/tb3_aprilTag
 source environment.sh
+```
 
 ### To run the simulation with the vision system:
 ```
@@ -55,5 +56,29 @@ It links Gazebo with Firmware, the bridge with Guidance controller, it includes 
 roslaunch load_simulation load_simulation.launch
 ```
 It runs MAVROS package and aprilTag vision system.
+
+### To run the bridge:
+```
+rosrun lcm_bridge lcm_bridge_node
+```
+In the catkin workspace
+
+### To run the guidance controller:
+```
+cd ~/mocap2mav
+source build_package.sh
+./app_start.sh
+```
+Then load the action list called list.txt following the form of "list_example.txt"
+
+
+
+
+
+
+
+
+
+
 
 
